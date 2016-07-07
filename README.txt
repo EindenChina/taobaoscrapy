@@ -20,7 +20,8 @@ more please watch the pdf
 # 使用
 1.安装模块请使用
 ```
-pip3 install *
+sudo pip3 install pymysql
+sudo pip3 install xlsxwriter
 ```
 
 2.打包windows二进制
@@ -47,8 +48,19 @@ taobaoscrapy
 运行
 ```
 run.bat
+或者
+python mtaobao.py
 ```
 
+4.程序出错
+有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序
+运行没完成。不必担心,只要原始数据在,一切好办。
+将 data 中的原始数据移到 help 文件夹中
+```
+runhelp.bat
+或者
+python help.py
+```
 
 do not understand?contact me.
 
@@ -56,3 +68,22 @@ author:hunterhug
 2015/11
 
 # 补充
+2016/7/7改bug
+请查看JSON.json，淘宝json数据字段变更，导致程序出错<br/>
+
+ '手机折扣'字段失效
+```
+Traceback (most recent call last):
+  File "mtaobao.py", line 322, in <module>
+    itemlist.append(item['mobileDiscount'])
+KeyError: 'mobileDiscount'
+```
+
+'URL地址'字段失效
+```
+Traceback (most recent call last):
+  File "mtaobao.py", line 328, in <module>
+    itemlist.append(item['auctionURL'])
+KeyError: 'auctionURL'
+```
+已经更正
