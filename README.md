@@ -52,8 +52,6 @@ taobaoscrapy
 -------help
 ```
 
-运行
-
 ```
 run.bat
 或者
@@ -81,6 +79,8 @@ author:hunterhug
 2016/7/7改bug
 请查看JSON.json，淘宝json数据字段变更，导致程序出错<br/>
 
+淘宝需要验证时，请往subcookie.txt填东西，参考pdf<br/>
+
  '手机折扣'字段失效
 ```
 Traceback (most recent call last):
@@ -88,7 +88,7 @@ Traceback (most recent call last):
     itemlist.append(item['mobileDiscount'])
 KeyError: 'mobileDiscount'
 ```
-s
+
 'URL地址'字段失效
 ```
 Traceback (most recent call last):
@@ -96,4 +96,5 @@ Traceback (most recent call last):
     itemlist.append(item['auctionURL'])
 KeyError: 'auctionURL'
 ```
+
 已经更正
