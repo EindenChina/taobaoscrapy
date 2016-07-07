@@ -202,7 +202,7 @@ def begin():
 
 if __name__ == '__main__':
 	begin()
-	password()
+	# password()
 	today=time.strftime('%Y%m%d', time.localtime())
 	a=time.clock()
 	keyword = input('请输入关键字：')
