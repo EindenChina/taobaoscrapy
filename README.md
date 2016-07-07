@@ -2,23 +2,22 @@
 由于Github 打包的exe某些文件上传被.gitignore了，所以不提供windows二进制包
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
+一个抓取淘宝的Python爬虫
 ---------------------------------------------------------
 
 一个抓取淘宝天猫关键字搜索商品的爬虫使用python3.4，爬虫程序已经封装好<br />
 支持抓取商品标题/商品价格/商品销量/商品图片等<br />
 使用请直接点击exe文件夹中后缀为exe的文件或者run.bat<br />
 
-#更多说明参考pdf
-
-一个抓取淘宝的Python爬虫
-
 ------------------------------------------------------------
 
 A scarpy for catch taobao item info<br />
 using python3<br />
 run just click exe/*.exe</br>
-
 more please watch the pdf
+
+#更多说明参考pdf
+
 
 # 使用
 1.安装模块请使用
@@ -59,8 +58,8 @@ python mtaobao.py
 ```
 
 4.程序出错
-有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序
-运行没完成。不必担心,只要原始数据在,一切好办。
+有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序<br/>
+运行没完成。不必担心,只要原始数据在,一切好办。<br/>
 将 data 中的原始数据移到 help 文件夹中
 
 ```
@@ -69,14 +68,16 @@ runhelp.bat
 python help.py
 ```
 
-do not understand?contact me.
-author:hunterhug
+
+do not understand?contact me.<br/>
+author:hunterhug<br/>
 2015/11
 
 --------------------------------------------------------------
 
 # 补充
-2016/7/7改bug
+1.2016/7/7改bug
+
 请查看JSON.json，淘宝json数据字段变更，导致程序出错<br/>
 
 淘宝需要验证时，请往subcookie.txt填东西，参考pdf<br/>
