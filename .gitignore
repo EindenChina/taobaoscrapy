@@ -8,9 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-data/
-excel/
-image/
+#data/
+#excel/
+#image/
 env/
 build/
 develop-eggs/
