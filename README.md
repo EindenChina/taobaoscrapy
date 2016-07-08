@@ -20,11 +20,32 @@ more please watch the pdf
 
 
 # 使用
+安装python3 https://www.python.org/downloads/   <br/>
+环境变量设置 
+
 1.安装模块请使用
 
 ```
 sudo pip3 install pymysql
 sudo pip3 install xlsxwriter
+```
+
+下载http://www.lfd.uci.edu/~gohlke/pythonlibs/
+```
+Pillow, a replacement for PIL, the Python Image Library, which provides image processing functionality and supports many file formats.
+Use `from PIL import Image` instead of `import Image`.
+
+    Pillow-3.3.0-cp27-cp27m-win32.whl
+    Pillow-3.3.0-cp27-cp27m-win_amd64.whl
+    Pillow-3.3.0-cp34-cp34m-win32.whl
+    Pillow-3.3.0-cp34-cp34m-win_amd64.whl
+    Pillow-3.3.0-cp35-cp35m-win32.whl
+    Pillow-3.3.0-cp35-cp35m-win_amd64.whl
+
+```
+
+```
+pip3 install Pillow-3.3.0-cp34-cp34m-win32.whl
 ```
 
 2.打包windows二进制
