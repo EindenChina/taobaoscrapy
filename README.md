@@ -89,6 +89,11 @@ runhelp.bat
 python help.py
 ```
 
+#演示
+![]()
+![]()
+![]()
+![]()
 
 do not understand?contact me.<br/>
 author:hunterhug<br/>
