@@ -20,8 +20,7 @@ more please watch the pdf
 
 
 # 使用
-安装python3 https://www.python.org/downloads/   <br/>
-环境变量设置 
+安装python3 https://www.python.org/downloads/  然后设置环境变量设置 
 
 1.安装模块请使用
 
@@ -30,7 +29,7 @@ sudo pip3 install pymysql
 sudo pip3 install xlsxwriter
 ```
 
-下载http://www.lfd.uci.edu/~gohlke/pythonlibs/
+下载图形包：http://www.lfd.uci.edu/~gohlke/pythonlibs/
 ```
 Pillow, a replacement for PIL, the Python Image Library, which provides image processing functionality and supports many file formats.
 Use `from PIL import Image` instead of `import Image`.
@@ -55,7 +54,7 @@ pip3 install Pillow-3.3.0-cp34-cp34m-win32.whl
 pip3 install cx_Freeze-4.3.4-cp35-none-win_amd64.whl
 ```
 
-转到源代码文件夹
+ 转到源代码文件夹
 
 ```
 python setup.py build
@@ -90,12 +89,12 @@ python help.py
 ```
 
 #演示
-![]()
-![]()
-![]()
-![]()
+![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme1.jpg](运行主程序)
+![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme2.jpg](运行辅助程序)
+![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme3.jpg](结果Image)
+![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme4.jpg](结果Excel)
 
-do not understand?contact me.<br/>
+Do not understand?contact me.<br/>
 author:hunterhug<br/>
 2015/11
 
