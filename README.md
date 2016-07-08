@@ -89,10 +89,11 @@ python help.py
 ```
 
 #演示
-![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme1.jpg?raw=true](运行主程序)
-![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme2.jpg?raw=true](运行辅助程序)
-![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme3.jpg?raw=true](结果Image)
-![https://github.com/hunterhug/taobaoscrapy/blob/master/seeme4.jpg?raw=true](结果Excel)
+![https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme1.jpg](运行主程序)
+![https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme2.jpg](运行辅助程序)
+![https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme3.jpg](结果Image)
+![https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme4.jpg](结果Excel)
+
 
 Do not understand?contact me.<br/>
 author:hunterhug<br/>
