@@ -125,3 +125,5 @@ KeyError: 'auctionURL'
 ```
 
 已经更正
+
+参考JSON可以加更多字段，请自行增加修改

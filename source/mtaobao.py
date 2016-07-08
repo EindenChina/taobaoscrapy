@@ -325,7 +325,7 @@ if __name__ == '__main__':
 			itemlist.append(item['zkType'])
 			itemlist.append(item['act'])
 			itemlist.append(item['coinLimit'])
-			itemlist.append(item['url'])
+			itemlist.append('http:'+item['url'])
 			picpath=item['pic_path'].replace('60x60','720x720')
 			itemlist.append(picpath)
 			#http://g.search2.alicdn.com/img/bao/uploaded/i4/i4/TB13O7bJVXXXXbJXpXXXXXXXXXX_%21%210-item_pic.jpg_180x180.jpg
