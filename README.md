@@ -2,6 +2,8 @@
 由于Github 打包的exe某些文件上传被.gitignore了，所以不提供windows二进制包
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
+<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme0.jpg' />
+
 一个抓取淘宝的Python爬虫
 ---------------------------------------------------------
 
