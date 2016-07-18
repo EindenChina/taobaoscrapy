@@ -10,6 +10,6 @@ executables = [
 setup (
 name = "mtaobao",
 version = "1.0",
-description = "sangjin",
+description = "hunterhug",
 executables=executables
 )
