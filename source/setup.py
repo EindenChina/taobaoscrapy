@@ -4,7 +4,7 @@ from cx_Freeze import setup, Executable
 base = None
 
 executables = [
-    Executable('mtaobao.py', base=base)
+    Executable('help.py', base=base)
 ]
 
 setup (
