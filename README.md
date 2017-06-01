@@ -1,4 +1,11 @@
 # 说明
+
+仍然能跑，但此库过大，我要用Go语言重构，请移动到 [https://github.com/hunterhug/GoSpiderExample](https://github.com/hunterhug/GoSpiderExample)
+
+库太大太凶残，以后二进制文件不能放在库里！
+
+我封装的Go爬虫库[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
+
 由于Github 打包的exe某些文件上传被.gitignore了，所以不提供windows二进制包
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
