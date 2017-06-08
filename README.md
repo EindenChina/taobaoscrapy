@@ -47,6 +47,60 @@ more please watch the pdf
 	-------runhelp.bat 
 ```
 
+# 二.Docker版环境
+
+Docker版安装：
+
+拉镜像
+
+```
+docker pull python
+
+```
+
+在本项目要下启动并挂载盘
+
+```
+docker run --rm -it -v $PWD:/taobao --name="my-python" python /bin/bash
+```
+
+`$PWD:/taobaoscrpy`将本项目挂在容器文件夹下`/taobao`
+
+然后
+
+```
+root@7b5d59c077ed:/taobaoscrpy# cd /taobao/
+root@7b5d59c077ed:/taobaoscrpy# python source/mtaobao.py 
+Traceback (most recent call last):
+  File "source/mtaobao.py", line 6, in <module>
+    import xlsxwriter as wx
+ModuleNotFoundError: No module named 'xlsxwriter'
+
+# 缺啥就pip3啥，但是这样每次都很慢
+```
+
+所以请不要`docker pull`，而是自己`build`!
+
+build:
+
+```
+docker build -t mypython .
+```
+
+然后:
+
+```
+docker run --rm -it -v $PWD:/taobao --name="my-python" mypython /bin/bash
+
+cd /taobao/source
+python mtaobao.py
+```
+
+杀docker容器请使用
+
+```
+docker kill my-python
+```
 # 二.环境准备
 
 安装[python3](https://www.python.org/downloads/)。然后设置环境变量设置。
@@ -56,9 +110,10 @@ more please watch the pdf
 依赖模块有`pymysql`, `xlswriter`, `bs4`
 
 ```
-sudo pip3 install pymysql
-sudo pip3 install xlsxwriter
-sudo pip3 install bs4
+pip3 install pymysql
+pip3 install xlsxwriter
+pip3 install bs4
+pip3 install openpyxl
 ```
 
 其实你只要键入这个即可！
