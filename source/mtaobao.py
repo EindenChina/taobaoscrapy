@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+__author__ = 'hunterhug'
 import urllib.request, urllib.parse, http.cookiejar
 import os, time,re
 import http.cookies
@@ -6,13 +7,24 @@ import xlsxwriter as wx
 from PIL import Image
 import pymysql
 import socket
-__author__ = 'hunterhug'
-# http://python.jobbole.com/81344/
-# 拆分JSON
 import xml.dom.minidom
 import json
 from openpyxl import Workbook
 from openpyxl import load_workbook
+import datetime
+
+def ispasstime(year,month,day):
+	# 今天的时间
+	nowtoday = datetime.datetime.today()
+	# 过期时间
+	passday = datetime.datetime(year,month,day)
+	# 剩余天数
+	remaindays = (nowtoday-passday).days
+	# 判断
+	if remaindays <= 0:
+		return True,-remaindays
+	else:
+		return False,remaindays
 
 def password():
 	print('请输入你的账号和密码')
@@ -192,8 +204,8 @@ def begin():
     sangjin = '''
 		-----------------------------------------
 		| 欢迎使用自动抓取手机淘宝关键字程序   	|
-		| 时间：2015年12月23日                  |
-		| 新浪微博：一只尼玛                    |
+		| 时间：2016年1月7日                    |
+		| 更新时间：2017年6月5日                |
 		| 微信/QQ：569929309                    |
 		-----------------------------------------
 	'''
@@ -201,6 +213,17 @@ def begin():
 
 
 if __name__ == '__main__':
+	# 明天的时间
+	year = 2017
+	month = 7
+	day =18
+	ispass,remainday = ispasstime(year,month,day)
+	if ispass:
+		print("还没有过期,剩余天数:"+str(remainday))
+	else:
+		print("已经过期,过期天数"+str(remainday))
+		time.sleep(10)
+		exit(1)
 	begin()
 	# password()
 	today=time.strftime('%Y%m%d', time.localtime())

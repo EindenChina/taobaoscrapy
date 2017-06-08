@@ -1,13 +1,11 @@
 # -*- coding:utf-8 -*-
+__author__ = 'hunterhug'
+
 import urllib.request, urllib.parse, http.cookiejar
 import os, time,re
 import http.cookies
 import xlsxwriter as wx
 from PIL import Image
-
-__author__ = 'hunterhug'
-# http://python.jobbole.com/81344/
-# 拆分JSON
 import xml.dom.minidom
 import json
 from openpyxl import Workbook
@@ -182,9 +180,9 @@ def timetochina(longtime,formats='{}天{}小时{}分钟{}秒'):
 def begin():
     sangjin = '''
 		-----------------------------------------
-		| 欢迎使用自动抓取手机淘宝关键字程序   	|
-		| 时间：2015年12月23日                  |
-		| 新浪微博：一只尼玛                    |
+		| 欢迎使用自动抓取手机淘宝关键字帮助程序|
+		| 时间：2016年1月7日                    |
+		| 更新时间：2017年6月5日                |
 		| 微信/QQ：569929309                    |
 		-----------------------------------------
 	'''
@@ -193,8 +191,8 @@ def begin():
 
 if __name__ == '__main__':
 	# 明天的时间
-	year = 2016
-	month = 12
+	year = 2017
+	month = 7
 	day =18
 	ispass,remainday = ispasstime(year,month,day)
 	if ispass:

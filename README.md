@@ -1,44 +1,79 @@
-# 说明
-
-仍然能跑，但此库过大，我要用Go语言重构，请移动到 [https://github.com/hunterhug/GoSpiderExample](https://github.com/hunterhug/GoSpiderExample)
-
-库太大太凶残，以后二进制文件不能放在库里！
+# 天猫淘宝关键字商品搜索说明
 
 我封装的Go爬虫库[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
 
-由于Github 打包的exe某些文件上传被.gitignore了，所以不提供windows二进制包
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
-<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme0.jpg' />
+![](doc/seeme0.jpg)
 
+仍然能跑，2017/6。
+
+```
 一个抓取淘宝的Python爬虫
 ---------------------------------------------------------
 
-一个抓取淘宝天猫关键字搜索商品的爬虫使用python3.4，爬虫程序已经封装好<br />
-支持抓取商品标题/商品价格/商品销量/商品图片等<br />
-使用请直接点击exe文件夹中后缀为exe的文件或者run.bat<br />
+一个抓取淘宝天猫关键字搜索商品的爬虫使用python3.4，爬虫程序已经封装好
+支持抓取商品标题/商品价格/商品销量/商品图片等
+使用请直接点击exe文件夹中后缀为exe的文件或者run.bat
 
 ------------------------------------------------------------
 
-A scarpy for catch taobao item info<br />
-using python3<br />
-run just click exe/*.exe</br>
+A scarpy for catch taobao item info
+using python3
+run just click exe/*.exe
 more please watch the pdf
+```
 
-#更多说明参考pdf
+>更多说明参考pdf
+>更多说明参考pdf
+>更多说明参考pdf
+>更多说明参考pdf
 
 
-# 使用
-安装python3 https://www.python.org/downloads/  然后设置环境变量设置 
+# 一.项目结构
 
-1.安装模块请使用
+```
+-----taobaocomment
+	-------source	源代码
+	-------data 原始数据
+	-------image 你要的图片
+	-------excel	你要的结果
+	-------exe.rar	请解压变成exe
+	-------exehelp.rar	请解压变成exehelp
+	-------run.bat	你要跑的脚本
+	-------runhelp.bat 
+```
+
+# 二.环境准备
+
+安装[python3](https://www.python.org/downloads/)。然后设置环境变量设置。
+
+## 1.安装依赖模块
+
+依赖模块有`pymysql`, `xlswriter`, `bs4`
 
 ```
 sudo pip3 install pymysql
 sudo pip3 install xlsxwriter
+sudo pip3 install bs4
 ```
 
-下载图形包：http://www.lfd.uci.edu/~gohlke/pythonlibs/
+其实你只要键入这个即可！
+
+```
+pip3 install -r requirement.txt
+
+```
+## 2.很难找到的模块
+
+从[万能仓库](http://www.lfd.uci.edu/~gohlke/pythonlibs/#cx_freeze) 下载对应版本的打包库,然后:
+
+```
+pip3 install cx_Freeze-4.3.4-cp35-none-win_amd64.whl
+```
+
+下载图形包`PIL`:
+
 ```
 Pillow, a replacement for PIL, the Python Image Library, which provides image processing functionality and supports many file formats.
 Use `from PIL import Image` instead of `import Image`.
@@ -52,56 +87,54 @@ Use `from PIL import Image` instead of `import Image`.
 
 ```
 
-```
-pip3 install Pillow-3.3.0-cp34-cp34m-win32.whl
-```
-
-2.打包windows二进制
-从万能仓库 http://www.lfd.uci.edu/~gohlke/pythonlibs/#cx_freeze 下载对应版本的打包库,然后:
+将`Pillow‑3.4.2‑cp34‑cp34m‑win32.whl` 改名 `Pillow‑3.4.2‑cp34‑none‑win32.whl` (装不了就改成none)
 
 ```
-pip3 install cx_Freeze-4.3.4-cp35-none-win_amd64.whl
+pip3 install Pillow‑3.4.2‑cp34‑none‑win32.whl
 ```
 
- 转到源代码文件夹
+## 3.打包exe
+
+转到源代码文件夹`source`
+
+执行打包命令！
 
 ```
 python setup.py build
 ```
 
-3.运行
-把exe.win32-3.4移到根目录taobaoscrapy，任意改名，以下改为exe，文件目录如下：
+把`exe.win32-3.4`文件夹移到根目录，改名为exe
 
-```
-taobaoscrapy
--------source
--------exe
--------exehelp
--------help
-```
+# 三.开始使用
+
+正常执行
 
 ```
 run.bat
+
 或者
+cd source
 python mtaobao.py
 ```
 
-4.程序出错
 有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序<br/>
 运行没完成。不必担心,只要原始数据在,一切好办。<br/>
 将 data 中的原始数据移到 help 文件夹中
 
+继续！
+
 ```
 runhelp.bat
 或者
+cd source
 python help.py
 ```
 
-#演示
-<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme1.jpg' />
-<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme2.jpg' />
-<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme3.jpg' />
-<img src='https://raw.githubusercontent.com/hunterhug/taobaoscrapy/master/seeme4.jpg' />
+# 四.演示
+![](doc/seeme1.jp)
+![](doc/seeme2.jp)
+![](doc/seeme3.jp)
+![](doc/seeme4.jp)
 
 
 Do not understand?contact me.<br/>
