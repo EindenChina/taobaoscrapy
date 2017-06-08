@@ -1,6 +1,6 @@
 # 天猫淘宝关键字商品搜索说明
 
-我封装的Go爬虫库[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
+我封装的Go爬虫库更不错哦[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
 
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
@@ -25,8 +25,11 @@ more please watch the pdf
 ```
 
 >更多说明参考pdf
+
 >更多说明参考pdf
+
 >更多说明参考pdf
+
 >更多说明参考pdf
 
 
@@ -131,10 +134,10 @@ python help.py
 ```
 
 # 四.演示
-![](doc/seeme1.jp)
-![](doc/seeme2.jp)
-![](doc/seeme3.jp)
-![](doc/seeme4.jp)
+![](doc/seeme1.jpg)
+![](doc/seeme2.jpg)
+![](doc/seeme3.jpg)
+![](doc/seeme4.jpg)
 
 
 Do not understand?contact me.<br/>
