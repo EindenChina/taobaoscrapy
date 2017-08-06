@@ -2,9 +2,6 @@
 
 > 专业爬虫开发，企业网站开发， 比外包更实惠，可以联系QQ哦:459527502
 
-> 也接受软件开发培训教学哦：Python/Java/Golang/HTML/CSS/JS/计算机科普/数据库/运维/爬虫/云计算/技术面试传授/程序员心理辅导等，一线作战，讲课更深动，一对一教学， 从业丰富，技术精湛。
-
-
 我封装的Go爬虫库更不错哦[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
 
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
@@ -31,12 +28,6 @@ more please watch the pdf
 
 >更多说明参考pdf
 
->更多说明参考pdf
-
->更多说明参考pdf
-
->更多说明参考pdf
-
 
 # 一.项目结构
 
@@ -52,7 +43,13 @@ more please watch the pdf
 	-------runhelp.bat 
 ```
 
-# 二.Docker版环境
+因为为了照顾初学者，所以推荐了如何安装Python环境和库的方法，有两种，装完后`python *.py`就可以运行了。
+
+之前还提供了exe的二进制，让小白使用，但好像过期了，我会用GO来重写这个工具，并且鉴于Issues提出的文档过于复杂，
+
+用Golang开发完，最后编译后只有一个exe文件，文档将会变成：您只需点击exe即可。祝好。
+
+# 二.Docker版环境准备(看不懂的可忽视，请选择下面本地环境准备)
 
 Docker版安装：
 
@@ -106,9 +103,9 @@ python mtaobao.py
 ```
 docker kill my-python
 ```
-# 二.环境准备
+# 二.本地环境准备
 
-安装[python3](https://www.python.org/downloads/)。然后设置环境变量设置。
+安装[python3](https://www.python.org/downloads/)。然后设置环境变量。
 
 ## 1.安装依赖模块
 
