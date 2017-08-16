@@ -202,20 +202,23 @@ def timetochina(longtime,formats='{}天{}小时{}分钟{}秒'):
 
 def begin():
     sangjin = '''
-		-----------------------------------------
-		| 欢迎使用自动抓取手机淘宝关键字程序   	|
-		| 时间：2016年1月7日                    |
-		| 更新时间：2017年6月5日                |
-		| 微信/QQ：569929309                    |
-		-----------------------------------------
+		-------------------------------------------------
+		| 欢迎使用自动抓取手机淘宝关键字程序   		|
+		| 代码上传时间：2016年1月7日  			|
+		| 更新时间：2017年6月5日                	|
+		| QQ  ：459527502                   		|
+		| Github：https://github.com/hunterhug          |
+		| 技术咨询：https://segmentfault.com/u/hunterhug|
+		------------------------------------------------
 	'''
     print(sangjin)
 
 
 if __name__ == '__main__':
 	# 明天的时间
-	year = 2017
-	month = 7
+	# 这里你必须改下时间，不然会过期哦
+	year = 2018
+	month = 8
 	day =18
 	ispass,remainday = ispasstime(year,month,day)
 	if ispass:
@@ -225,6 +228,7 @@ if __name__ == '__main__':
 		time.sleep(10)
 		exit(1)
 	begin()
+	# 这个是授权用的。
 	# password()
 	today=time.strftime('%Y%m%d', time.localtime())
 	a=time.clock()

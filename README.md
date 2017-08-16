@@ -1,10 +1,5 @@
 # 天猫淘宝关键字商品搜索说明
 
-> 专业爬虫开发，企业网站开发， 比外包更实惠，可以联系QQ哦:459527502
-
-> 也接受软件开发培训教学哦：Python/Java/Golang/HTML/CSS/JS/计算机科普/数据库/运维/爬虫/云计算/技术面试传授/程序员心理辅导等，一线作战，讲课更深动，一对一教学， 从业丰富，技术精湛。
-
-
 我封装的Go爬虫库更不错哦[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
 
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
