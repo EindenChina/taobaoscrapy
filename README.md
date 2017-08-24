@@ -2,7 +2,7 @@
 
 已经太久远了，不再维护了。
 
-我封装的Go爬虫库更不错哦[https://github.com/hunterhug/GoSpider](https://github.com/hunterhug/GoSpider)效果不错！
+本人开了新库，使用Golang语言，速度更快----更多精彩请移动到[https://github.com/hunterhug/GoTaoBao](https://github.com/hunterhug/GoTaoBao)
 
 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
