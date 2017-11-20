@@ -19,8 +19,6 @@
 ------------------------------------------------------------
 ```
 
->更多说明参考pdf
-
 # 一.项目结构
 
 ```
@@ -59,7 +57,7 @@ pip3 install cx_Freeze-4.3.4-cp35-none-win_amd64.whl
 python setup.py build
 ```
 
-把`exe.win32-3.4`文件夹移到根目录，改名为exe, 同样`python setuphelp.py build`打包辅助工具.
+把`exe.win32-3.4`文件夹移到根目录，改名为exe, 同样`python setuphelp.py build`打包辅助工具, 移动到根目录, 改名exehelp.
 
 # 三.开始使用
 
@@ -76,9 +74,7 @@ run.bat
 
 有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序<br/>
 运行没完成。不必担心,只要原始数据在,一切好办。<br/>
-将 data 中的原始数据移到 help 文件夹中
-
-继续！
+将 data 中的原始数据移到 help 文件夹中继续！
 
 ```
 cd source

@@ -29,7 +29,7 @@ def password():
     print('请输入你的账号和密码')
     user = input('账号：')
     pwd = input('密码：')
-    if user == 'jinhan' and pwd == '6833066':
+    if user == 'jinhan' and pwd == 'xxx':
         print('欢迎你：' + user)
         return
     try:
