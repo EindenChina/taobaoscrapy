@@ -4,3 +4,5 @@ openpyxl
 
 # 其他依赖请自行添加
 pymysql
+pillow
+cx_Freeze

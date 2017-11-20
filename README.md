@@ -2,9 +2,7 @@
 
 已经太久远了，不再维护了。
 
-本人开了新库，使用Golang语言，速度更快----更多精彩请移动到[https://github.com/hunterhug/GoTaoBao](https://github.com/hunterhug/GoTaoBao)
-
-更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
+本人开了新库，使用Golang语言, 更多精彩请移动到[https://github.com/hunterhug/GoTaoBao](https://github.com/hunterhug/GoTaoBao), 更多参考：[一只尼玛博客园](http://www.cnblogs.com/nima/p/5324490.html)
 
 ![](doc/seeme0.jpg)
 
@@ -19,15 +17,9 @@
 使用请直接点击exe文件夹中后缀为exe的文件或者run.bat
 
 ------------------------------------------------------------
-
-A scarpy for catch taobao item info
-using python3
-run just click exe/*.exe
-more please watch the pdf
 ```
 
 >更多说明参考pdf
-
 
 # 一.项目结构
 
@@ -43,138 +35,43 @@ more please watch the pdf
 	-------runhelp.bat 
 ```
 
-因为为了照顾初学者，所以推荐了如何安装Python环境和库的方法，有两种，装完后`python *.py`就可以运行了。
-
-之前还提供了exe的二进制，让小白使用，但好像过期了，我会用GO来重写这个工具，并且鉴于Issues提出的文档过于复杂，
-
-用Golang开发完，最后编译后只有一个exe文件，文档将会变成：您只需点击exe即可。祝好。
-
-# 二.Docker版环境准备(看不懂的可忽视，请选择下面本地环境准备)
-
-Docker版安装：
-
-拉镜像
-
-```
-docker pull python
-
-```
-
-在本项目要下启动并挂载盘
-
-```
-docker run --rm -it -v $PWD:/taobao --name="my-python" python /bin/bash
-```
-
-`$PWD:/taobaoscrpy`将本项目挂在容器文件夹下`/taobao`
-
-然后
-
-```
-root@7b5d59c077ed:/taobaoscrpy# cd /taobao/
-root@7b5d59c077ed:/taobaoscrpy# python source/mtaobao.py 
-Traceback (most recent call last):
-  File "source/mtaobao.py", line 6, in <module>
-    import xlsxwriter as wx
-ModuleNotFoundError: No module named 'xlsxwriter'
-
-# 缺啥就pip3啥，但是这样每次都很慢
-```
-
-所以请不要`docker pull`，而是自己`build`!
-
-build:
-
-```
-docker build -t mypython .
-```
-
-然后:
-
-```
-docker run --rm -it -v $PWD:/taobao --name="my-python" mypython /bin/bash
-
-cd /taobao/source
-python mtaobao.py
-```
-
-杀docker容器请使用
-
-```
-docker kill my-python
-```
 # 二.本地环境准备
 
 安装[python3](https://www.python.org/downloads/)。然后设置环境变量。
 
 ## 1.安装依赖模块
 
-依赖模块有`pymysql`, `xlswriter`, `bs4`
-
-```
-pip3 install pymysql
-pip3 install xlsxwriter
-pip3 install bs4
-pip3 install openpyxl
-```
-
-其实你只要键入这个即可！
-
 ```
 pip3 install -r requirement.txt
-
 ```
-## 2.很难找到的模块
 
-从[万能仓库](http://www.lfd.uci.edu/~gohlke/pythonlibs/#cx_freeze) 下载对应版本的打包库,然后:
+如果安装模块失败, 那么可能是`cx_Freeze`下载失败, 从[万能仓库](http://www.lfd.uci.edu/~gohlke/pythonlibs/#cx_freeze) 下载对应版本的打包库,然后:
 
 ```
 pip3 install cx_Freeze-4.3.4-cp35-none-win_amd64.whl
 ```
 
-下载图形包`PIL`:
+## 2.打包exe
 
-```
-Pillow, a replacement for PIL, the Python Image Library, which provides image processing functionality and supports many file formats.
-Use `from PIL import Image` instead of `import Image`.
-
-    Pillow-3.3.0-cp27-cp27m-win32.whl
-    Pillow-3.3.0-cp27-cp27m-win_amd64.whl
-    Pillow-3.3.0-cp34-cp34m-win32.whl
-    Pillow-3.3.0-cp34-cp34m-win_amd64.whl
-    Pillow-3.3.0-cp35-cp35m-win32.whl
-    Pillow-3.3.0-cp35-cp35m-win_amd64.whl
-
-```
-
-将`Pillow‑3.4.2‑cp34‑cp34m‑win32.whl` 改名 `Pillow‑3.4.2‑cp34‑none‑win32.whl` (装不了就改成none)
-
-```
-pip3 install Pillow‑3.4.2‑cp34‑none‑win32.whl
-```
-
-## 3.打包exe
-
-转到源代码文件夹`source`
-
-执行打包命令！
+转到源代码文件夹`source`, 执行打包命令！
 
 ```
 python setup.py build
 ```
 
-把`exe.win32-3.4`文件夹移到根目录，改名为exe
+把`exe.win32-3.4`文件夹移到根目录，改名为exe, 同样`python setuphelp.py build`打包辅助工具.
 
 # 三.开始使用
 
 正常执行
 
 ```
-run.bat
-
-或者
 cd source
 python mtaobao.py
+
+或者
+
+run.bat
 ```
 
 有时候程序运行中途断网或者其他原因,如误点下载图片,而图片几万张不耐烦终止程序,导致程序<br/>
@@ -184,10 +81,12 @@ python mtaobao.py
 继续！
 
 ```
-runhelp.bat
-或者
 cd source
 python help.py
+
+或者
+
+runhelp.bat
 ```
 
 # 四.演示
@@ -202,7 +101,7 @@ author:hunterhug<br/>
 2015/11
 
 
-如果你觉得项目帮助到你,欢迎请我喝杯咖啡， 或加QQ：459527502
+如果你觉得项目帮助到你,欢迎请我喝杯咖啡
 
 微信
 ![微信](https://raw.githubusercontent.com/hunterhug/hunterhug.github.io/master/static/jpg/wei.png)
