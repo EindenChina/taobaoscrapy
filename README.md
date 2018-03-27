@@ -43,6 +43,20 @@
 pip3 install -r requirement.txt
 ```
 
+Windows用户请自行装库：
+
+```
+import urllib.request, urllib.parse, http.cookiejar
+import os, time, re
+import http.cookies
+import xlsxwriter as wx
+from PIL import Image
+import pymysql
+import socket
+import json
+import datetime
+```
+
 如果安装模块失败, 那么可能是`cx_Freeze`下载失败, 从[万能仓库](http://www.lfd.uci.edu/~gohlke/pythonlibs/#cx_freeze) 下载对应版本的打包库,然后:
 
 ```
